@@ -1,0 +1,97 @@
+{
+    "site": {
+        "title": "개인 블로그"
+    },
+    "nav": {
+        "home": "홈",
+        "blog": "블로그",
+        "gallery": "갤러리",
+        "about": "소개",
+        "contact": "문의"
+    },
+    "hero": {
+        "title": "블로그에 오신 것을 환영합니다",
+        "subtitle": "디자인과 기술의 이야기 공유"
+    },
+    "blog": {
+        "title": "최신 게시물",
+        "subtitle": "최신 생각과 경험 공유",
+        "header": {
+            "title": "블로그 게시물",
+            "subtitle": "기술적 통찰력과 고찰 공유"
+        },
+        "readMore": "더 보기"
+    },
+    "gallery": {
+        "title": "포트폴리오",
+        "subtitle": "선별된 프로젝트 사례",
+        "header": {
+            "title": "작품 갤러리",
+            "subtitle": "창의적인 세계 탐험"
+        },
+        "filters": {
+            "all": "전체",
+            "web": "웹 디자인",
+            "app": "앱 인터페이스",
+            "brand": "브랜드 디자인",
+            "ui": "UI 컴포넌트"
+        }
+    },
+    "contact": {
+        "title": "문의하기",
+        "header": {
+            "title": "문의하기",
+            "description": "질문이나 제안이 있으신가요? 언제든지 연락해 주세요"
+        },
+        "form": {
+            "name": "이름",
+            "email": "이메일",
+            "subject": "제목",
+            "message": "메시지",
+            "submit": "메시지 보내기"
+        },
+        "info": {
+            "title": "연락처 정보",
+            "description": "아래 방법을 통해 연락해 주시면 최대한 빨리 답변 드리겠습니다.",
+            "email": {
+                "title": "이메일",
+                "value": "contact@example.com"
+            },
+            "phone": {
+                "title": "전화",
+                "value": "(123) 456-7890"
+            },
+            "address": {
+                "title": "주소",
+                "value": "서울특별시 xxx구 xxx동 xxx"
+            },
+            "hours": {
+                "title": "근무 시간",
+                "value": "월요일 - 금요일: 9:00 - 18:00"
+            },
+            "wechat": {
+                "title": "WeChat",
+                "value": "WeChat_ID"
+            }
+        }
+    },
+    "footer": {
+        "about": {
+            "title": "회사 소개",
+            "desc": "우리는 고객에게 최고 품질의 디자인과 기술 솔루션을 제공하는 데 열정을 가진 창의적인 팀입니다."
+        },
+        "quickLinks": {
+            "title": "빠른 링크"
+        },
+        "contact": {
+            "title": "연락처",
+            "email": "contact@example.com",
+            "phone": "(123) 456-7890",
+            "address": "서울특별시 xxx구 xxx동 xxx"
+        },
+        "followUs": {
+            "title": "팔로우하기"
+        },
+        "copyright": "© 2024 개인 블로그. 모든 권리 보유."
+    }
+}

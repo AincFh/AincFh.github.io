@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="login.title">登录 - 个人博客</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/login.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="loading-overlay">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">加载中...</span>
+        </div>
+    </div>
+
+    <nav class="global-nav">
+        <div class="nav-content">
+            <a href="./index.html" class="nav-logo">
+                <img src="./images/logo.png" alt="Logo" class="logo-image">
+            </a>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="nav-link"><i class="fas fa-home"></i> <span data-i18n="nav.home">首页</span></a></li>
+                <li><a href="./blog.html" class="nav-link"><i class="fas fa-blog"></i> <span data-i18n="nav.blog">博客</span></a></li>
+                <li><a href="./gallery.html" class="nav-link"><i class="fas fa-images"></i> <span data-i18n="nav.gallery">图库</span></a></li>
+                <li><a href="./about.html" class="nav-link"><i class="fas fa-user"></i> <span data-i18n="nav.about">关于</span></a></li>
+                <li><a href="./contact.html" class="nav-link"><i class="fas fa-envelope"></i> <span data-i18n="nav.contact">联系</span></a></li>
+                <li class="language-switcher">
+                    <div class="lang-btn">
+                        <i class="fas fa-globe"></i>
+                        <span class="current-lang">简体中文</span>
+                    </div>
+                    <div class="language-dropdown">
+                        <div class="lang-option" data-lang="zh-CN">
+                            <span class="lang-name">简体中文</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="zh-TW">
+                            <span class="lang-name">繁體中文</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="en">
+                            <span class="lang-name">English</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="ja">
+                            <span class="lang-name">日本語</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="ko">
+                            <span class="lang-name">한국어</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" title="切换导航菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <div class="login-container">
+        <div class="login-box">
+            <div class="login-header">
+                <h1 data-i18n="login.welcome">欢迎回来</h1>
+                <p data-i18n="login.subtitle">请登录您的账号</p>
+            </div>
+            <form class="login-form" id="loginForm">
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i></label>
+                    <input type="email" id="email" name="email" required 
+                           placeholder="电子邮箱" data-i18n="login.email.placeholder">
+                </div>
+                <div class="form-group">
+                    <label for="password"><i class="fas fa-lock"></i></label>
+                    <input type="password" id="password" name="password" required 
+                           placeholder="密码" data-i18n="login.password.placeholder">
+                    <button type="button" class="toggle-password" title="切换密码显示">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+                <div class="form-options">
+                    <label class="remember-me">
+                        <input type="checkbox" name="remember">
+                        <span data-i18n="login.rememberMe">记住我</span>
+                    </label>
+                    <a href="./forgot-password.html" class="forgot-password" data-i18n="login.forgotPassword">
+                        忘记密码？
+                    </a>
+                </div>
+                <button type="submit" class="login-btn" data-i18n="login.button">登录</button>
+                <div class="social-login">
+                    <p data-i18n="login.socialLogin">使用其他方式登录</p>
+                    <div class="social-icons">
+                        <button type="button" class="social-btn weixin" title="使用微信登录">
+                            <i class="fab fa-weixin"></i>
+                        </button>
+                        <button type="button" class="social-btn qq" title="使用QQ登录">
+                            <i class="fab fa-qq"></i>
+                        </button>
+                        <button type="button" class="social-btn weibo" title="使用微博登录">
+                            <i class="fab fa-weibo"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="login-footer">
+                <p data-i18n="login.noAccount">还没有账号？</p>
+                <a href="./register.html" data-i18n="login.register">立即注册</a>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/i18n.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
+</body>
+</html>

@@ -1,0 +1,287 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="about.title">关于我们 - 个人博客</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/about.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="global-nav">
+        <div class="nav-content">
+            <a href="./index.html" class="nav-logo">
+                <img src="./images/logo.png" alt="Logo" class="logo-image">
+            </a>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="nav-link"><i class="fas fa-home"></i> <span data-i18n="nav.home">首页</span></a></li>
+                <li><a href="./blog.html" class="nav-link"><i class="fas fa-blog"></i> <span data-i18n="nav.blog">博客</span></a></li>
+                <li><a href="./gallery.html" class="nav-link"><i class="fas fa-images"></i> <span data-i18n="nav.gallery">图库</span></a></li>
+                <li><a href="./about.html" class="nav-link active"><i class="fas fa-user"></i> <span data-i18n="nav.about">关于</span></a></li>
+                <li><a href="./contact.html" class="nav-link"><i class="fas fa-envelope"></i> <span data-i18n="nav.contact">联系</span></a></li>
+                <li class="language-switcher">
+                    <button class="lang-btn" title="切换语言">
+                        <i class="fas fa-globe"></i>
+                        <span class="current-lang">简体中文</span>
+                    </button>
+                    <ul class="language-dropdown">
+                        <li data-lang="zh-CN" class="active"><span>简体中文</span></li>
+                        <li data-lang="zh-TW"><span>繁體中文</span></li>
+                        <li data-lang="en"><span>English</span></li>
+                        <li data-lang="ja"><span>日本語</span></li>
+                        <li data-lang="ko"><span>한国어</span></li>
+                    </ul>
+                </li>
+                <li class="auth-buttons">
+                    <a href="./login.html" class="btn btn-login"><i class="fas fa-sign-in-alt"></i> <span data-i18n="nav.login">登录</span></a>
+                    <a href="./register.html" class="btn btn-register"><i class="fas fa-user-plus"></i> <span data-i18n="nav.register">注册</span></a>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" title="切换导航菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+    <div class="about-container">
+        <header class="about-header">
+            <div class="about-header-overlay" data-bg="https://picsum.photos/1920/1080?random=1">
+            <div class="about-header-content">
+                <h1 data-i18n="about.header.title">关于我们</h1>
+                <p class="header-main-text" data-i18n="about.header.subtitle">用创新思维打造数字未来</p>
+                <div class="header-description">
+                    <p>专注于网站开发、移动应用和数字化解决方案</p>
+                    <p>让技术创新成为企业发展的核心驱动力</p>
+                </div>
+            </div>
+        </header>
+
+        <main class="about-content">
+            <section class="about-section fade-up">
+                <h2 data-i18n="about.story.title">我们的故事</h2>
+                <div class="story-content">
+                    <div class="story-text">
+                        <p data-i18n="about.story.content1">作为创始人 AincFh���我从1999年互联网初兴时期就开始创业。凭借对技术的热爱和对未来的展望，我创立了这个平台，致力于为用户提供最优质的设计和技术解决方案。</p>
+                        <p data-i18n="about.story.content2">在这25年的发展历程中，我和我的团队始终保持对新技术的热情和追求，同时注重用户体验和设计美学的平衡。我们见证了互联网从Web1.0到Web3.0的演进，也在每个重要节点上做出了自己的贡献。</p>
+                        <p>我们的团队由经验丰富的设计师、开发者和产品经理组成，每个人都在各自的领域有着深厚的积累。我们善于倾听、勇于创新、精于执行，致力于为每一个项目注入独特的创意和专业的技术支持。</p>
+                    </div>
+                    <div class="story-image">
+                        <img src="https://picsum.photos/800/600?random=2" 
+                             alt="我们的团队在工作中" 
+                             loading="lazy">
+                    </div>
+                </div>
+            </section>
+            <section class="about-section fade-up">
+                <h2 data-i18n="about.values.title">我们的价值观</h2>
+                <div class="values-grid">
+                    <div class="value-item">
+                        <i class="fas fa-heart"></i>
+                        <h3 data-i18n="about.values.passion.title">热情</h3>
+                        <p data-i18n="about.values.passion.description">对工作充满热情，追求卓越</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-lightbulb"></i>
+                        <h3 data-i18n="about.values.innovation.title">创新</h3>
+                        <p data-i18n="about.values.innovation.description">持续创新，突破界限</p>
+                    </div>
+                    <div class="value-item">
+                        <i class="fas fa-users"></i>
+                        <h3 data-i18n="about.values.teamwork.title">团队协作</h3>
+                        <p data-i18n="about.values.teamwork.description">团结协作，共同成长</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="about-section fade-up">
+                <h2 data-i18n="about.team.title">核心团队</h2>
+                <div class="team-grid split-layout">
+                    <!-- 左侧创始人板块 -->
+                    <div class="founder-section">
+                        <div class="team-member founder">
+                            <div class="member-image">
+                                <div class="question-avatar">
+                                    <i class="fas fa-question"></i>
+                                </div>
+                            </div>
+                            <h3>AincFh</h3>
+                            <p class="member-title">创始人 / 技术总监</p>
+                            <div class="member-description">
+                                <p>25年互联网技术从业经验</p>
+                                <p>全栈开发专家，技术创新引领者</p>
+                            </div>
+                            <div class="member-social">
+                                <a href="#" title="访问GitHub主页"><i class="fab fa-github"></i></a>
+                                <a href="#" title="访问微信"><i class="fab fa-weixin"></i></a>
+                                <a href="#" title="访问微博"><i class="fab fa-weibo"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- 右侧团队成员板块 -->
+                    <div class="team-members-section">
+                        <div class="team-member">
+                            <div class="member-image">
+                                <img src="https://picsum.photos/200/200?random=1" alt="李明">
+                            </div>
+                            <div class="member-info">
+                                <h3>李明阳</h3>
+                                <p class="member-title">产品设计师</p>
+                                <div class="member-social">
+                                    <a href="#" title="访问微信"><i class="fab fa-weixin"></i></a>
+                                    <a href="#" title="访问微博"><i class="fab fa-weibo"></i></a>
+                                    <a href="#" title="访问GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-member">
+                            <div class="member-image">
+                                <img src="https://picsum.photos/200/200?random=2" alt="王琳">
+                            </div>
+                            <div class="member-info">
+                                <h3>王琳欣</h3>
+                                <p class="member-title">UI/UX设计师</p>
+                                <div class="member-social">
+                                    <a href="#" title="访问微信"><i class="fab fa-weixin"></i></a>
+                                    <a href="#" title="访问微博"><i class="fab fa-weibo"></i></a>
+                                    <a href="#" title="访问GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-member">
+                            <div class="member-image">
+                                <img src="https://picsum.photos/200/200?random=3" alt="张伟">
+                            </div>
+                            <div class="member-info">
+                                <h3>张伟诚</h3>
+                                <p class="member-title">后端开发工程师</p>
+                                <div class="member-social">
+                                    <a href="#" title="访问微信"><i class="fab fa-weixin"></i></a>
+                                    <a href="#" title="访问微博"><i class="fab fa-weibo"></i></a>
+                                    <a href="#" title="访问GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="team-member">
+                            <div class="member-image">
+                                <img src="https://picsum.photos/200/200?random=4" alt="陈静">
+                            </div>
+                            <div class="member-info">
+                                <h3>陈静</h3>
+                                <p class="member-title">端开发工程师</p>
+                                <div class="member-social">
+                                    <a href="#" title="访问微信"><i class="fab fa-weixin"></i></a>
+                                    <a href="#" title="访问微博"><i class="fab fa-weibo"></i></a>
+                                    <a href="#" title="访问GitHub"><i class="fab fa-github"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section class="about-section fade-up"></section>
+                <h2 data-i18n="about.timeline.title">发展历程</h2>
+                <div class="timeline-horizontal">
+                    <div class="timeline-track">
+                        <div class="timeline-item">
+                            <div class="year">1999</div>
+                            <div class="milestone">
+                                <h3>创业起航</h3>
+                                <p>创立公司，专注企业网站建设和域名服务，成为最早一批互联网技术服务提供商。</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="year">2001</div>
+                            <div class="milestone">
+                                <h3>技术突破</h3>
+                                <p>成功开发动态网站管理系统，获得首批技术专利，服务客户突破100家。</p>
+                            </div>
+                        </div>
+                        <div class="timeline-item">
+                            <div class="year">2024</div>
+                            <div class="milestone">
+                                <h3>未来展望</h3>
+                                <p>深耕AI应用，推出新一代智能化解决方案，引领技术创新。</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="year">2025</div>
+                            <div class="milestone">
+                                <h3>Web3生态</h3>
+                                <p>布局区块链技术，发布去中心化应用平台，构建Web3生态系统。</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="year">2026</div>
+                            <div class="milestone">
+                                <h3>智能生态</h3>
+                                <p>整合AI、IoT和区块链技术，打造全方位智能化生态系统。</p>
+                            </div>
+                        </div>
+
+                        <div class="timeline-item">
+                            <div class="year">2027</div>
+                            <div class="milestone">
+                                <h3>未来生态</h3>
+                                <p>构建数字孪生平台，实现虚实结合的全新数字生态体系。</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </div>
+    <footer class="global-footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 data-i18n="footer.about.title">关于我们</h3>
+                    <p data-i18n="footer.about.desc">我们是一个充满激情的创意团队，致力于为客户提供最优质的设计和技术解决方案。</p>
+                </div>
+                <div class="footer-column">
+                    <h3 data-i18n="footer.quickLinks.title">快速链接</h3>
+                    <ul>
+                        <li><a href="#blog" data-i18n="nav.blog">博客</a></li>
+                        <li><a href="#gallery" data-i18n="nav.gallery">作品</a></li>
+                        <li><a href="./about.html" data-i18n="nav.about">关于</a></li>
+                        <li><a href="./contact.html" data-i18n="nav.contact">联系</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-i18n="footer.contact.title">联系方式</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> <span data-i18n="footer.contact.email">contact@example.com</span></li>
+                        <li><i class="fas fa-phone"></i> <span data-i18n="footer.contact.phone">(123) 456-7890</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer.contact.address">北京市朝阳区xxx街xxx号</span></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-i18n="footer.followUs.title">关注我们</h3>
+                    <div class="social-links">
+                        <a href="#" title="访问微信"><i class="fab fa-weixin"></i></a>
+                        <a href="#" title="访问微博"><i class="fab fa-weibo"></i></a>
+                        <a href="#" title="访问GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="访问LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2024 个人博客. 保留所有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/i18n.js" type="module"></script>
+    <script src="./js/main.js" type="module"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/about.js"></script>
+</body>
+</html>

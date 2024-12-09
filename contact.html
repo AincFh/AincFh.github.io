@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="contact.title">联系我们 - 个人博客</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/contact.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="loading-overlay">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">加载中...</span>
+        </div>
+    </div>
+
+    <nav class="global-nav">
+        <div class="nav-content">
+            <a href="./index.html" class="nav-logo">
+                <img src="./images/logo.png" alt="Logo" class="logo-image">
+            </a>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="nav-link"><i class="fas fa-home"></i> <span data-i18n="nav.home">首页</span></a></li>
+                <li><a href="./blog.html" class="nav-link"><i class="fas fa-blog"></i> <span data-i18n="nav.blog">博客</span></a></li>
+                <li><a href="./gallery.html" class="nav-link"><i class="fas fa-images"></i> <span data-i18n="nav.gallery">图库</span></a></li>
+                <li><a href="./about.html" class="nav-link"><i class="fas fa-user"></i> <span data-i18n="nav.about">关于</span></a></li>
+                <li><a href="./contact.html" class="nav-link active"><i class="fas fa-envelope"></i> <span data-i18n="nav.contact">联系</span></a></li>
+                <li class="language-switcher">
+                    <div class="lang-btn">
+                        <i class="fas fa-globe"></i>
+                        <span class="current-lang">简体中文</span>
+                    </div>
+                    <div class="language-dropdown">
+                        <div class="lang-option" data-lang="zh-CN">
+                            <span class="lang-name">简体中文</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="zh-TW">
+                            <span class="lang-name">繁體中文</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="en">
+                            <span class="lang-name">English</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="ja">
+                            <span class="lang-name">日本語</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="ko">
+                            <span class="lang-name">한국어</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="user-menu">
+                    <div class="user-avatar">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <div class="user-dropdown">
+                        <div class="user-dropdown-content">
+                            <div class="guest-welcome">
+                                <div class="welcome-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="welcome-text">
+                                    <h4>探索更多功能</h4>
+                                    <p>登录后即可体验完整功能</p>
+                                </div>
+                            </div>
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-bookmark"></i>
+                                    <span>收藏文章</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>参与讨论</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-bell"></i>
+                                    <span>消息通知</span>
+                                </div>
+                            </div>
+                            <a href="./login.html" class="login-link primary">
+                                <i class="fas fa-rocket"></i>
+                                <span>立即登录</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" title="切换导航菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 联系页面内容 -->
+    <div class="contact-container">
+        <!-- 原有的联系页面内容 -->
+    </div>
+
+    <script src="./js/i18n.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
+</body>
+</html>

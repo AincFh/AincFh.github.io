@@ -1,0 +1,97 @@
+{
+    "site": {
+        "title": "Personal Blog"
+    },
+    "nav": {
+        "home": "Home",
+        "blog": "Blog",
+        "gallery": "Gallery",
+        "about": "About",
+        "contact": "Contact"
+    },
+    "hero": {
+        "title": "Welcome to My Blog",
+        "subtitle": "Sharing Stories of Design and Technology"
+    },
+    "blog": {
+        "title": "Latest Posts",
+        "subtitle": "Sharing My Latest Thoughts and Experiences",
+        "header": {
+            "title": "Blog Posts",
+            "subtitle": "Sharing Technical Insights and Reflections"
+        },
+        "readMore": "Read More"
+    },
+    "gallery": {
+        "title": "Portfolio",
+        "subtitle": "Selected Project Cases",
+        "header": {
+            "title": "Portfolio Gallery",
+            "subtitle": "Explore the Creative World"
+        },
+        "filters": {
+            "all": "All",
+            "web": "Web Design",
+            "app": "App Interface",
+            "brand": "Brand Design",
+            "ui": "UI Components"
+        }
+    },
+    "contact": {
+        "title": "Contact Us",
+        "header": {
+            "title": "Contact Us",
+            "description": "Have any questions or suggestions? Feel free to contact us"
+        },
+        "form": {
+            "name": "Name",
+            "email": "Email",
+            "subject": "Subject",
+            "message": "Message",
+            "submit": "Send Message"
+        },
+        "info": {
+            "title": "Contact Information",
+            "description": "Welcome to contact us through the following methods, we will reply to your inquiry as soon as possible.",
+            "email": {
+                "title": "Email",
+                "value": "contact@example.com"
+            },
+            "phone": {
+                "title": "Phone",
+                "value": "(123) 456-7890"
+            },
+            "address": {
+                "title": "Address",
+                "value": "123 Example Street, City, Country"
+            },
+            "hours": {
+                "title": "Working Hours",
+                "value": "Monday - Friday: 9:00 AM - 6:00 PM"
+            },
+            "wechat": {
+                "title": "WeChat",
+                "value": "WeChat_ID"
+            }
+        }
+    },
+    "footer": {
+        "about": {
+            "title": "About Us",
+            "desc": "We are a passionate creative team dedicated to providing the highest quality design and technical solutions for our clients."
+        },
+        "quickLinks": {
+            "title": "Quick Links"
+        },
+        "contact": {
+            "title": "Contact Info",
+            "email": "contact@example.com",
+            "phone": "(123) 456-7890",
+            "address": "123 Example Street, City, Country"
+        },
+        "followUs": {
+            "title": "Follow Us"
+        },
+        "copyright": "© 2024 Personal Blog. All rights reserved."
+    }
+}

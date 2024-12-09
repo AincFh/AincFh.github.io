@@ -1,0 +1,97 @@
+{
+    "site": {
+        "title": "個人部落格"
+    },
+    "nav": {
+        "home": "首頁",
+        "blog": "部落格",
+        "gallery": "圖庫",
+        "about": "關於",
+        "contact": "聯絡"
+    },
+    "hero": {
+        "title": "歡迎來到我的部落格",
+        "subtitle": "分享設計與技術的故事"
+    },
+    "blog": {
+        "title": "最新文章",
+        "subtitle": "分享我的最新想法和經驗",
+        "header": {
+            "title": "部落格文章",
+            "subtitle": "分享技術與思考"
+        },
+        "readMore": "閱讀更多"
+    },
+    "gallery": {
+        "title": "作品展示",
+        "subtitle": "精選專案案例",
+        "header": {
+            "title": "作品圖庫",
+            "subtitle": "探索創意世界"
+        },
+        "filters": {
+            "all": "全部",
+            "web": "網站設計",
+            "app": "應用介面",
+            "brand": "品牌設計",
+            "ui": "UI元件"
+        }
+    },
+    "contact": {
+        "title": "聯絡我們",
+        "header": {
+            "title": "聯絡我們",
+            "description": "有任何問題或建議？請隨時與我們聯絡"
+        },
+        "form": {
+            "name": "姓名",
+            "email": "電子郵件",
+            "subject": "主旨",
+            "message": "訊息",
+            "submit": "發送訊息"
+        },
+        "info": {
+            "title": "聯絡方式",
+            "description": "歡迎透過以下方式與我們取得聯絡，我們將盡快回覆您的諮詢。",
+            "email": {
+                "title": "電子郵件",
+                "value": "contact@example.com"
+            },
+            "phone": {
+                "title": "電話",
+                "value": "(123) 456-7890"
+            },
+            "address": {
+                "title": "地址",
+                "value": "台北市信義區xxx街xxx號"
+            },
+            "hours": {
+                "title": "工作時間",
+                "value": "週一至週五: 9:00 - 18:00"
+            },
+            "wechat": {
+                "title": "微信",
+                "value": "WeChat_ID"
+            }
+        }
+    },
+    "footer": {
+        "about": {
+            "title": "關於我們",
+            "desc": "我們是一個充滿熱情的創意團隊，致力於為客戶提供最優質的設計和技術解決方案。"
+        },
+        "quickLinks": {
+            "title": "快速連結"
+        },
+        "contact": {
+            "title": "聯絡方式",
+            "email": "contact@example.com",
+            "phone": "(123) 456-7890",
+            "address": "台北市信義區xxx街xxx號"
+        },
+        "followUs": {
+            "title": "關注我們"
+        },
+        "copyright": "© 2024 個人部落格. 保留所有權利."
+    }
+}

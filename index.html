@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="site.title">个人博客</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="loading-overlay">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">加载中...</span>
+        </div>
+    </div>
+
+    <script>
+        window.addEventListener('load', function() {
+            document.body.classList.add('loaded');
+        });
+    </script>
+
+    <nav class="global-nav">
+        <div class="nav-content">
+            <a href="./index.html" class="nav-logo">
+                <img src="./images/logo.png" alt="Logo" class="logo-image">
+            </a>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="nav-link active"><i class="fas fa-home"></i> <span data-i18n="nav.home">首页</span></a></li>
+                <li><a href="./blog.html" class="nav-link"><i class="fas fa-blog"></i> <span data-i18n="nav.blog">博客</span></a></li>
+                <li><a href="./gallery.html" class="nav-link"><i class="fas fa-images"></i> <span data-i18n="nav.gallery">图库</span></a></li>
+                <li><a href="./about.html" class="nav-link"><i class="fas fa-user"></i> <span data-i18n="nav.about">关于</span></a></li>
+                <li><a href="./contact.html" class="nav-link"><i class="fas fa-envelope"></i> <span data-i18n="nav.contact">联系</span></a></li>
+                <li class="language-switcher">
+                    <div class="lang-btn">
+                        <i class="fas fa-globe"></i>
+                        <span class="current-lang">简体中文</span>
+                    </div>
+                    <div class="language-dropdown">
+                        <div class="lang-option active" data-lang="zh-CN">
+                            <div class="lang-name">
+                                <span class="primary">简体中文</span>
+                                <span class="secondary">中国大陆</span>
+                            </div>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="zh-TW">
+                            <div class="lang-name">
+                                <span class="primary">繁體中文</span>
+                                <span class="secondary">中國台灣</span>
+                            </div>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="en">
+                            <div class="lang-name">
+                                <span class="primary">English</span>
+                                <span class="secondary">United States</span>
+                            </div>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="ja">
+                            <div class="lang-name">
+                                <span class="primary">日本語</span>
+                                <span class="secondary">日本</span>
+                            </div>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="ko">
+                            <div class="lang-name">
+                                <span class="primary">한국어</span>
+                                <span class="secondary">대한민국</span>
+                            </div>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="user-menu">
+                    <div class="user-avatar">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <div class="user-dropdown">
+                        <div class="user-dropdown-content">
+                            <div class="guest-welcome">
+                                <div class="welcome-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="welcome-text">
+                                    <h4>探索更多功能</h4>
+                                    <p>登录后即可体验完整功能</p>
+                                </div>
+                            </div>
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-bookmark"></i>
+                                    <span>收藏文章</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>参与讨论</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-bell"></i>
+                                    <span>消息通知</span>
+                                </div>
+                            </div>
+                            <a href="./login.html" class="login-link primary">
+                                <i class="fas fa-rocket"></i>
+                                <span>立即登录</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" title="打开菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <header class="hero">
+        <canvas id="heroCanvas"></canvas>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1 class="hero-title" data-i18n="hero.title">欢迎来到我的博客</h1>
+            <p class="hero-subtitle" data-i18n="hero.subtitle">分享设计与技术的���事</p>
+        </div>
+    </header>
+
+    <main>
+        <section id="blog" class="section">
+            <div class="container">
+                <h2 class="section-title" data-i18n="blog.title">最新博客</h2>
+                <p class="section-subtitle" data-i18n="blog.subtitle">分享我的最新想法和经验</p>
+                <div class="blog-grid">
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="https://via.placeholder.com/800x600" alt="Tech Trends">
+                        </div>
+                        <div class="blog-card-content">
+                            <h3 data-i18n="tech.trends.title">2024技术趋势展望</h3>
+                            <p data-i18n="tech.trends.desc">探讨AI、Web3.0、量子计算等前沿技术发展方向...</p>
+                            <a href="./blog/tech-trends-2024.html" class="read-more" data-i18n="blog.readMore">阅读更多</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="https://via.placeholder.com/800x600" alt="占位图片">
+                        </div>
+                        <div class="blog-card-content">
+                            <h3>人工智能的突破与创新</h3>
+                            <p>深入解析最新AI技术突破与应用场景...</p>
+                            <a href="./blog/ai-innovation.html" class="read-more">阅读更多</a>
+                        </div>
+                    </article>
+                    <article class="blog-card">
+                        <div class="blog-card-image">
+                            <img src="https://via.placeholder.com/800x600" alt="占位图片">
+                        </div>
+                        <div class="blog-card-content">
+                            <h3>Web3.0与未来互联网</h3>
+                            <p>探索去中心化网络与元宇宙的发展前景...</p>
+                            <a href="./blog/web3-future.html" class="read-more">阅读更多</a>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section bg-light">
+            <div class="container">
+                <h2 class="section-title" data-i18n="gallery.title">作品展示</h2>
+                <p class="section-subtitle" data-i18n="gallery.subtitle">精选项目案例</p>
+                <div class="gallery-grid">
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/800x600" alt="AI Platform">
+                        <div class="gallery-overlay">
+                            <h3 data-i18n="project.ai.platform.title">AI算可视化平台</h3>
+                            <p data-i18n="project.ai.platform.desc">深度学习算法的可视化展示系统</p>
+                            <a href="./projects/ai-platform.html" class="project-link" data-i18n="project.viewDetails">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/800x600" alt="占位图片">
+                        <div class="gallery-overlay">
+                            <h3>智慧城市解决方案</h3>
+                            <p>城市数据分析与可视化系统</p>
+                            <a href="./projects/smart-city.html" class="project-link">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/800x600" alt="占位图片">
+                        <div class="gallery-overlay">
+                            <h3>区块链应用平台</h3>
+                            <p>去中心化金融系统界面设计</p>
+                            <a href="./projects/blockchain-platform.html" class="project-link">查看详情</a>
+                        </div>
+                    </div>
+                    <div class="gallery-item">
+                        <img src="https://via.placeholder.com/800x600" alt="占位图片">
+                        <div class="gallery-overlay">
+                            <h3>元宇宙交互空间</h3>
+                            <p>3D虚拟社交平台设计</p>
+                            <a href="./projects/metaverse-space.html" class="project-link">查看详情</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="global-footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3 data-i18n="footer.about.title">关于我们</h3>
+                    <p data-i18n="footer.about.desc">我们是一个充满激情的创意团队，致力于为客户提供最优质的设计和技术解决方案。</p>
+                </div>
+                <div class="footer-column">
+                    <h3 data-i18n="footer.quickLinks.title">快速链接</h3>
+                    <ul>
+                        <li><a href="#blog" data-i18n="nav.blog">博客</a></li>
+                        <li><a href="#gallery" data-i18n="nav.gallery">作品</a></li>
+                        <li><a href="./about.html" data-i18n="nav.about">关于</a></li>
+                        <li><a href="./contact.html" data-i18n="nav.contact">联</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-i18n="footer.contact.title">联系方式</h3>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> <span data-i18n="footer.contact.email">contact@example.com</span></li>
+                        <li><i class="fas fa-phone"></i> <span data-i18n="footer.contact.phone">(123) 456-7890</span></li>
+                        <li><i class="fas fa-map-marker-alt"></i> <span data-i18n="footer.contact.address">北京市朝阳区xxx街xxx号</span></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3 data-i18n="footer.followUs.title">关注我们</h3>
+                    <div class="social-links">
+                        <a href="#" title="关注微信"><i class="fab fa-weixin"></i></a>
+                        <a href="#" title="关注微博"><i class="fab fa-weibo"></i></a>
+                        <a href="#" title="访问GitHub"><i class="fab fa-github"></i></a>
+                        <a href="#" title="访问LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p data-i18n="footer.copyright">&copy; 2024 个人博客. 保留有权利.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/i18n.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
+    <script src="./js/hero-animation.js"></script>
+</body>
+</html>

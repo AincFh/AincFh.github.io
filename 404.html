@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="error.pageTitle">404 - 页面未找到</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <style>
+        .error-container {
+            height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            text-align: center;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+        }
+
+        .error-content {
+            max-width: 600px;
+            padding: 0 20px;
+        }
+
+        .error-code {
+            font-size: 120px;
+            font-weight: 700;
+            color: var(--primary-color);
+            margin-bottom: 20px;
+            animation: fadeInDown 1s ease;
+        }
+
+        .error-title {
+            font-size: 36px;
+            margin-bottom: 20px;
+            animation: fadeInUp 1s ease 0.3s both;
+        }
+
+        .error-message {
+            font-size: 18px;
+            color: var(--text-light);
+            margin-bottom: 40px;
+            animation: fadeIn 1s ease 0.6s both;
+        }
+
+        .error-buttons {
+            display: flex;
+            gap: 20px;
+            justify-content: center;
+            animation: fadeIn 1s ease 0.9s both;
+        }
+
+        .error-image {
+            max-width: 400px;
+            margin: 0 auto 40px;
+            animation: float 3s ease-in-out infinite;
+        }
+
+        @keyframes float {
+            0%, 100% {
+                transform: translateY(0);
+            }
+            50% {
+                transform: translateY(-20px);
+            }
+        }
+
+        @media (max-width: 768px) {
+            .error-code {
+                font-size: 80px;
+            }
+
+            .error-title {
+                font-size: 24px;
+            }
+
+            .error-message {
+                font-size: 16px;
+            }
+
+            .error-buttons {
+                flex-direction: column;
+            }
+
+            .error-image {
+                max-width: 300px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="error-container">
+        <div class="error-content">
+            <img src="./images/404.svg" alt="404" class="error-image">
+            <div class="error-code">404</div>
+            <h1 class="error-title" data-i18n="error.title">页面未找到</h1>
+            <p class="error-message" data-i18n="error.message">抱歉，您访问的页面不存在或已被移除。</p>
+            <div class="error-buttons">
+                <a href="./index.html" class="btn btn-primary" data-i18n="error.backHome">返回首页</a>
+                <button onclick="history.back()" class="btn btn-secondary" data-i18n="error.goBack">返回上一页</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="./js/i18n.js"></script>
+    <script>
+        document.addEventListener('DOMContentLoaded', function() {
+            window.i18n = new I18nManager();
+        });
+    </script>
+</body>
+</html>

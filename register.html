@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="register.title">注册 - 个人博客</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <div id="loading-overlay">
+        <div class="spinner-border text-primary" role="status">
+            <span class="visually-hidden">加载中...</span>
+        </div>
+    </div>
+
+    <!-- 导航栏 -->
+    <nav class="global-nav">
+        <div class="nav-content">
+            <a href="./index.html" class="nav-logo">
+                <img src="./images/logo.png" alt="Logo" class="logo-image">
+            </a>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="nav-link"><i class="fas fa-home"></i> <span data-i18n="nav.home">首页</span></a></li>
+                <li><a href="./blog.html" class="nav-link"><i class="fas fa-blog"></i> <span data-i18n="nav.blog">博客</span></a></li>
+                <li><a href="./gallery.html" class="nav-link"><i class="fas fa-images"></i> <span data-i18n="nav.gallery">图库</span></a></li>
+                <li><a href="./about.html" class="nav-link"><i class="fas fa-user"></i> <span data-i18n="nav.about">关于</span></a></li>
+                <li><a href="./contact.html" class="nav-link"><i class="fas fa-envelope"></i> <span data-i18n="nav.contact">联系</span></a></li>
+                <li class="language-switcher">
+                    <div class="lang-btn">
+                        <i class="fas fa-globe"></i>
+                        <span class="current-lang">简体中文</span>
+                    </div>
+                    <div class="language-dropdown">
+                        <div class="lang-option" data-lang="zh-CN">
+                            <span class="lang-name">简体中文</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="zh-TW">
+                            <span class="lang-name">繁體中文</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="en">
+                            <span class="lang-name">English</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="ja">
+                            <span class="lang-name">日本語</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="ko">
+                            <span class="lang-name">한국어</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="user-menu">
+                    <div class="user-avatar">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <div class="user-dropdown">
+                        <div class="user-dropdown-content">
+                            <div class="guest-welcome">
+                                <div class="welcome-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="welcome-text">
+                                    <h4>探索更多功能</h4>
+                                    <p>登录后即可体验完整功能</p>
+                                </div>
+                            </div>
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-bookmark"></i>
+                                    <span>收藏文章</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>参与讨论</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-bell"></i>
+                                    <span>消息通知</span>
+                                </div>
+                            </div>
+                            <a href="./login.html" class="login-link primary">
+                                <i class="fas fa-rocket"></i>
+                                <span>立即登录</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" title="切换导航菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <!-- 注册表单容器 -->
+    <div class="register-container">
+        <div class="register-box">
+            <div class="register-header">
+                <h1 data-i18n="register.header">创建账号</h1>
+                <p data-i18n="register.subtitle">加入我们的社区</p>
+            </div>
+            <form class="register-form" id="registerForm">
+                <div class="form-group">
+                    <label for="username"><i class="fas fa-user"></i></label>
+                    <input type="text" id="username" name="username" required 
+                           placeholder="用户名" data-i18n="register.username.placeholder">
+                    <span class="form-tip" data-i18n="register.username.tip">4-20个字符，可包含字母、数字和下划线</span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="email"><i class="fas fa-envelope"></i></label>
+                    <input type="email" id="email" name="email" required 
+                           placeholder="电子邮箱" data-i18n="register.email.placeholder">
+                </div>
+
+                <div class="form-group">
+                    <label for="password"><i class="fas fa-lock"></i></label>
+                    <input type="password" id="password" name="password" required 
+                           placeholder="密码" data-i18n="register.password.placeholder">
+                    <button type="button" class="toggle-password" title="切换密码显示">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                    <span class="form-tip" data-i18n="register.password.tip">至少8个字符，包含大小写字母、数字和特殊符号</span>
+                </div>
+
+                <div class="form-group">
+                    <label for="confirm-password"><i class="fas fa-lock"></i></label>
+                    <input type="password" id="confirm-password" name="confirm-password" required 
+                           placeholder="确认密码" data-i18n="register.confirmPassword.placeholder">
+                    <button type="button" class="toggle-password" title="切换密码显示">
+                        <i class="fas fa-eye"></i>
+                    </button>
+                </div>
+
+                <div class="form-group verification">
+                    <div class="verification-input">
+                        <label for="verification"><i class="fas fa-shield-alt"></i></label>
+                        <input type="text" id="verification" name="verification" required 
+                               placeholder="验证码" data-i18n="register.verification.placeholder">
+                    </div>
+                    <button type="button" class="send-code" data-i18n="register.sendCode">发送验证码</button>
+                </div>
+
+                <div class="form-agreement">
+                    <label class="agreement-checkbox">
+                        <input type="checkbox" name="agreement" required>
+                        <span data-i18n="register.agreement">我已阅读并同意</span>
+                        <a href="./agreement.html" target="_blank" data-i18n="register.terms">《用户服务协议》</a>
+                        <span>和</span>
+                        <a href="./privacy.html" target="_blank" data-i18n="register.privacy">《隐私政策》</a>
+                    </label>
+                </div>
+
+                <button type="submit" class="register-btn" data-i18n="register.button">注册</button>
+
+                <div class="social-register">
+                    <p data-i18n="register.socialRegister">使用其他方式注册</p>
+                    <div class="social-icons">
+                        <button type="button" class="social-btn weixin" title="使用微信注册">
+                            <i class="fab fa-weixin"></i>
+                        </button>
+                        <button type="button" class="social-btn qq" title="使用QQ注册">
+                            <i class="fab fa-qq"></i>
+                        </button>
+                        <button type="button" class="social-btn weibo" title="使用微博注册">
+                            <i class="fab fa-weibo"></i>
+                        </button>
+                    </div>
+                </div>
+            </form>
+            <div class="register-footer">
+                <p data-i18n="register.hasAccount">已有账号？</p>
+                <a href="./login.html" data-i18n="register.login">立即登录</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- 页脚 -->
+    <footer class="global-footer">
+        <div class="footer-content">
+            <div class="footer-grid">
+                <div class="footer-column">
+                    <h3>关于我们</h3>
+                    <p>分享技术，连接世界</p>
+                </div>
+                <div class="footer-column">
+                    <h3>快速链接</h3>
+                    <ul>
+                        <li><a href="./index.html">首页</a></li>
+                        <li><a href="./blog.html">博客</a></li>
+                        <li><a href="./about.html">关于</a></li>
+                        <li><a href="./contact.html">联系</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>联系方式</h3>
+                    <ul>
+                        <li><a href="mailto:contact@example.com">Email</a></li>
+                        <li><a href="#">微信</a></li>
+                        <li><a href="#">QQ</a></li>
+                    </ul>
+                </div>
+                <div class="footer-column">
+                    <h3>关注我们</h3>
+                    <div class="social-links">
+                        <a href="#" title="访问微信"><i class="fab fa-weixin"></i></a>
+                        <a href="#" title="访问QQ"><i class="fab fa-qq"></i></a>
+                        <a href="#" title="访问微博"><i class="fab fa-weibo"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 个人博客. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="./js/i18n.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/animations.js"></script>
+</body>
+</html>

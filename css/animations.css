@@ -1,0 +1,143 @@
+:root {
+    --animation-duration: 0.6s;
+    --animation-timing: cubic-bezier(0.4, 0, 0.2, 1);
+    --animation-delay-unit: 0.1s;
+}
+
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes fadeInUp {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes fadeInDown {
+    from {
+        opacity: 0;
+        transform: translateY(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+@keyframes scaleIn {
+    from {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    to {
+        opacity: 1;
+        transform: scale(1);
+    }
+}
+
+@keyframes slideInLeft {
+    from {
+        opacity: 0;
+        transform: translateX(-20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+@keyframes slideInRight {
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+}
+
+.animate-fadeIn {
+    animation: fadeIn var(--animation-duration) var(--animation-timing) forwards;
+}
+
+.animate-fadeInUp {
+    animation: fadeInUp var(--animation-duration) var(--animation-timing) forwards;
+}
+
+.animate-fadeInDown {
+    animation: fadeInDown var(--animation-duration) var(--animation-timing) forwards;
+}
+
+.animate-scaleIn {
+    animation: scaleIn var(--animation-duration) var(--animation-timing) forwards;
+}
+
+.animate-slideInLeft {
+    animation: slideInLeft var(--animation-duration) var(--animation-timing) forwards;
+}
+
+.animate-slideInRight {
+    animation: slideInRight var(--animation-duration) var(--animation-timing) forwards;
+}
+
+.delay-1 {
+    animation-delay: calc(var(--animation-delay-unit) * 1);
+}
+
+.delay-2 {
+    animation-delay: calc(var(--animation-delay-unit) * 2);
+}
+
+.delay-3 {
+    animation-delay: calc(var(--animation-delay-unit) * 3);
+}
+
+.delay-4 {
+    animation-delay: calc(var(--animation-delay-unit) * 4);
+}
+
+.delay-5 {
+    animation-delay: calc(var(--animation-delay-unit) * 5);
+}
+
+.fade-up {
+    opacity: 0;
+    transform: translateY(20px);
+    transition: opacity 0.6s ease, transform 0.6s ease;
+}
+
+.fade-up.visible {
+    opacity: 1;
+    transform: translateY(0);
+}
+
+.parallax {
+    transition: transform 0.1s ease-out;
+}
+
+.mouse-follower {
+    transition: transform 0.1s ease-out;
+}
+
+@media (prefers-reduced-motion: reduce) {
+    *,
+    ::before,
+    ::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+}

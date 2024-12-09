@@ -1,0 +1,770 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title data-i18n="nav.blog">博客 - 个人博客</title>
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/animations.css">
+    <link rel="stylesheet" href="./css/blog.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <nav class="global-nav">
+        <div class="nav-content">
+            <a href="./index.html" class="nav-logo">
+                <img src="./images/logo.png" alt="Logo" class="logo-image">
+            </a>
+            <ul class="nav-links">
+                <li><a href="./index.html" class="nav-link"><i class="fas fa-home"></i> <span data-i18n="nav.home">首页</span></a></li>
+                <li><a href="./blog.html" class="nav-link active"><i class="fas fa-blog"></i> <span data-i18n="nav.blog">博客</span></a></li>
+                <li><a href="./gallery.html" class="nav-link"><i class="fas fa-images"></i> <span data-i18n="nav.gallery">图库</span></a></li>
+                <li><a href="./about.html" class="nav-link"><i class="fas fa-user"></i> <span data-i18n="nav.about">关于</span></a></li>
+                <li><a href="./contact.html" class="nav-link"><i class="fas fa-envelope"></i> <span data-i18n="nav.contact">联系</span></a></li>
+                <li class="language-switcher">
+                    <div class="lang-btn">
+                        <i class="fas fa-globe"></i>
+                        <span class="current-lang">简体中文</span>
+                    </div>
+                    <div class="language-dropdown">
+                        <div class="lang-option" data-lang="zh-CN">
+                            <span class="lang-name">简体中文</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="zh-TW">
+                            <span class="lang-name">繁體中文</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="en">
+                            <span class="lang-name">English</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="ja">
+                            <span class="lang-name">日本語</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="ko">
+                            <span class="lang-name">한국어</span>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                    </div>
+                </li>
+                <li class="user-menu">
+                    <div class="user-avatar">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <div class="user-dropdown">
+                        <div class="user-dropdown-content">
+                            <div class="guest-welcome">
+                                <div class="welcome-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="welcome-text">
+                                    <h4>探索更多功能</h4>
+                                    <p>登录后即可体验完整功能</p>
+                                </div>
+                            </div>
+                            <div class="feature-list">
+                                <div class="feature-item">
+                                    <i class="fas fa-bookmark"></i>
+                                    <span>收藏文章</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-comment"></i>
+                                    <span>参与讨论</span>
+                                </div>
+                                <div class="feature-item">
+                                    <i class="fas fa-bell"></i>
+                                    <span>消息通知</span>
+                                </div>
+                            </div>
+                            <a href="./login.html" class="login-link primary">
+                                <i class="fas fa-rocket"></i>
+                                <span>立即登录</span>
+                            </a>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <button class="mobile-menu-btn" title="切换导航菜单">
+                <span></span>
+                <span></span>
+                <span></span>
+            </button>
+        </div>
+    </nav>
+
+    <main class="blog-container">
+        <header class="blog-header">
+            <div class="blog-header-content">
+                <h1 data-i18n="blog.header.title">博客文章</h1>
+                <p data-i18n="blog.header.subtitle">分享技术与思考</p>
+            </div>
+        </header>
+
+        <div class="blog-content">
+            <div class="blog-grid">
+                                <!-- 前端开发文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=1" alt="前端开发">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-03-20</span>
+                                            <span class="post-category">frontend</span>
+                                        </div>
+                                        <h2 class="post-title">现代前端工程化实践</h2>
+                                        <p class="post-excerpt">探索前端工程化最佳实践，包括构建工具、自动化测试、CI/CD流程等核心内容</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                
+                                <!-- AI开发文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=2" alt="AI开发">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-03-18</span>
+                                            <span class="post-category">ai</span>
+                                        </div>
+                                        <h2 class="post-title">AI辅助开发新趋势</h2>
+                                        <p class="post-excerpt">AI如何改变开发流程，提高编码效率，以及未来发展方向的深度分析</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                
+                                <!-- 云计算文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=3" alt="云原生">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-03-15</span>
+                                            <span class="post-category">cloud</span>
+                                        </div>
+                                        <h2 class="post-title">云原生应用开发指南</h2>
+                                        <p class="post-excerpt">从微服务到容器化，探索云原生应用开发的核心概念和实践经验</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                
+                                <!-- 移动开发文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=4" alt="移动开发">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-03-12</span>
+                                            <span class="post-category">mobile</span>
+                                        </div>
+                                        <h2 class="post-title">跨平台移动应用开发</h2>
+                                        <p class="post-excerpt">Flutter vs React Native，探讨主流跨平台开发框架的优劣及最佳实践</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                                                <!-- 后端开发文章 -->
+                <article class="blog-post fade-up">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/800/600?random=5" alt="后端开发">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024-03-10</span>
+                            <span class="post-category">backend</span>
+                        </div>
+                        <h2 class="post-title">微服务架构设计</h2>
+                        <p class="post-excerpt">深入探讨微服务架构的设计原则、服务拆分策略和实践经验</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+
+                <!-- DevOps文章 -->
+                <article class="blog-post fade-up">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/800/600?random=6" alt="DevOps">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024-03-08</span>
+                            <span class="post-category">devops</span>
+                        </div>
+                        <h2 class="post-title">DevOps最佳实践</h2>
+                        <p class="post-excerpt">探索DevOps文化、工具链和自动化流程的企业实践案例</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+
+                <!-- UI/UX设计文章 -->
+                <article class="blog-post fade-up">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/800/600?random=7" alt="UI设计">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024-03-05</span>
+                            <span class="post-category">ui-ux</span>
+                        </div>
+                        <h2 class="post-title">用户体验设计原则</h2>
+                        <p class="post-excerpt">探讨现代用户界面设计原则和用户体验优化方法</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+
+                <!-- 数据库文章 -->
+                <article class="blog-post fade-up">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/800/600?random=8" alt="数据库">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024-03-03</span>
+                            <span class="post-category">database</span>
+                        </div>
+                        <h2 class="post-title">数据库优化策略</h2>
+                        <p class="post-excerpt">关系型数据库性能优化和查询调优的实践指南</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+                                <!-- 前端开发文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=9" alt="前端开发">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-03-01</span>
+                                            <span class="post-category">frontend</span>
+                                        </div>
+                                        <h2 class="post-title">Web性能优化指南</h2>
+                                        <p class="post-excerpt">全面的Web应用性能优化策略，从加载到运行时的优化技巧</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                
+                                <!-- 后端技术文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=10" alt="后端开发">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-03-07</span>
+                                            <span class="post-category">backend</span>
+                                        </div>
+                                        <h2 class="post-title">Spring Boot 3.0新特性解析</h2>
+                                        <p class="post-excerpt">深入探讨Spring Boot 3.0带来的重要更新，包括原生支持和性能优化</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                
+                                <!-- 端技术文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=11" alt="后端开发">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-03-06</span>
+                                            <span class="post-category">backend</span>
+                                        </div>
+                                        <h2 class="post-title">Go语言微服务实践</h2>
+                                        <p class="post-excerpt">使用Go语言构建高性能微服务，包含实际案例和最佳实践</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                
+                                <!-- DevOps文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=12" alt="DevOps">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-03-05</span>
+                                            <span class="post-category">devops</span>
+                                        </div>
+                                        <h2 class="post-title">Kubernetes最佳实践指南</h2>
+                                        <p class="post-excerpt">容器编排和集群管理的进阶技巧，从部署到监控的完整解决方案</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                                                <!-- 数据库文章 -->
+                <article class="blog-post fade-up">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/800/600?random=13" alt="数据库">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024-03-04</span>
+                            <span class="post-category">database</span>
+                        </div>
+                        <h2 class="post-title">MongoDB性能优化实战</h2>
+                        <p class="post-excerpt">深入理解MongoDB索引优化、查询性能提升和集群部署策略</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+
+                <!-- 前端开发文章 -->
+                <article class="blog-post fade-up">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/800/600?random=14" alt="前端开发">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024-03-03</span>
+                            <span class="post-category">frontend</span>
+                        </div>
+                        <h2 class="post-title">Next.js 14企业级应用开发</h2>
+                        <p class="post-excerpt">使用Next.js构建高性能React应用，包含SSR和静态生成最佳实践</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+
+                <!-- UI/UX设计文章 -->
+                <article class="blog-post fade-up">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/800/600?random=15" alt="UI设计">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024-03-02</span>
+                            <span class="post-category">ui-ux</span>
+                        </div>
+                        <h2 class="post-title">设计系统组件库实践</h2>
+                        <p class="post-excerpt">从零开始构建企业级设计系统，确保设计一致性和开发效率</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+
+                <!-- 移动开发文章 -->
+                <article class="blog-post fade-up">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/800/600?random=16" alt="移动开发">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024-03-01</span>
+                            <span class="post-category">mobile</span>
+                        </div>
+                        <h2 class="post-title">Flutter状态管理进阶</h2>
+                        <p class="post-excerpt">深入理解Flutter中的状态管理方案，从Provider到Riverpod的最佳实践</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+                                <!-- AI开发文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=17" alt="AI开发">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-02-29</span>
+                                            <span class="post-category">ai</span>
+                                        </div>
+                                        <h2 class="post-title">深度学习框架对比</h2>
+                                        <p class="post-excerpt">PyTorch vs TensorFlow：深度学习框架的特点、优势及应用场景分析</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                
+                                <!-- 云计算文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=18" alt="云计算">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-02-28</span>
+                                            <span class="post-category">cloud</span>
+                                        </div>
+                                        <h2 class="post-title">AWS Lambda最佳实践</h2>
+                                        <p class="post-excerpt">无服务器架构实战指南，从开发到部署的完整��决方案</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                
+                                <!-- 前端开发文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=19" alt="前端开发">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-02-27</span>
+                                            <span class="post-category">frontend</span>
+                                        </div>
+                                        <h2 class="post-title">Vue 3组件设计模式</h2>
+                                        <p class="post-excerpt">探索Vue 3组件的高级设计模式，提高代码复用性和可维护性</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                
+                                <!-- 后端技术文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=20" alt="后端开发">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-02-26</span>
+                                            <span class="post-category">backend</span>
+                                        </div>
+                                        <h2 class="post-title">Node.js性能调优指南</h2>
+                                        <p class="post-excerpt">深入理解Node.js性能优化技巧，从内存管理到集群部署</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                                                <!-- DevOps文章 -->
+                <article class="blog-post fade-up">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/800/600?random=21" alt="DevOps">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024-02-25</span>
+                            <span class="post-category">devops</span>
+                        </div>
+                        <h2 class="post-title">Jenkins Pipeline进阶</h2>
+                        <p class="post-excerpt">使用Jenkins实现现代CI/CD流程，包含多环境部署和自动化测试</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+
+                <!-- 数据库文章 -->
+                <article class="blog-post fade-up">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/800/600?random=22" alt="数据库">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024-02-24</span>
+                            <span class="post-category">database</span>
+                        </div>
+                        <h2 class="post-title">PostgreSQL高可用方案</h2>
+                        <p class="post-excerpt">探索PostgreSQL的高可用架构，从主从复制到故障转移的实践指南</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+
+                <!-- UI/UX设计文章 -->
+                <article class="blog-post fade-up">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/800/600?random=23" alt="UI设计">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024-02-23</span>
+                            <span class="post-category">ui-ux</span>
+                        </div>
+                        <h2 class="post-title">移动端交互设计指南</h2>
+                        <p class="post-excerpt">探索移动应用的交互设计原则，提升用户体验和转化率</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+
+                <!-- 移动开发文章 -->
+                <article class="blog-post fade-up">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/800/600?random=24" alt="移动开发">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024-02-22</span>
+                            <span class="post-category">mobile</span>
+                        </div>
+                        <h2 class="post-title">React Native性能优化</h2>
+                        <p class="post-excerpt">深入解析React Native应用性能优化策略，提升应用流畅度</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+                                <!-- AI开发文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=25" alt="AI开发">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-02-21</span>
+                                            <span class="post-category">ai</span>
+                                        </div>
+                                        <h2 class="post-title">机器学习模型部署实践</h2>
+                                        <p class="post-excerpt">从模型训练到生产环境部署的完整工作流程指南</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                
+                                <!-- 前端开发文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=26" alt="前端开发">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-02-20</span>
+                                            <span class="post-category">frontend</span>
+                                        </div>
+                                        <h2 class="post-title">微前端架构实践</h2>
+                                        <p class="post-excerpt">使用Module Federation实现微前端架构，解决大型应用开发难题</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                
+                                <!-- 云计算文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=27" alt="云计算">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-02-19</span>
+                                            <span class="post-category">cloud</span>
+                                        </div>
+                                        <h2 class="post-title">容器化应用最佳实践</h2>
+                                        <p class="post-excerpt">Docker和Kubernetes在企业级应用中的实践经验分享</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                
+                                <!-- DevOps文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=28" alt="DevOps">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-02-18</span>
+                                            <span class="post-category">devops</span>
+                                        </div>
+                                        <h2 class="post-title">GitOps工作流实践</h2>
+                                        <p class="post-excerpt">使用ArgoCD实现GitOps，打造现代化的持续部署流程</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                                                <!-- 后端技术文章 -->
+                <article class="blog-post fade-up">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/800/600?random=29" alt="后端开发">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024-02-17</span>
+                            <span class="post-category">backend</span>
+                        </div>
+                        <h2 class="post-title">GraphQL API设计指南</h2>
+                        <p class="post-excerpt">深入理解GraphQL API的设计原则和最佳实践</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+
+                <!-- 数据库文章 -->
+                <article class="blog-post fade-up">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/800/600?random=30" alt="数据库">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024-02-16</span>
+                            <span class="post-category">database</span>
+                        </div>
+                        <h2 class="post-title">时序数据库应用实践</h2>
+                        <p class="post-excerpt">InfluxDB在物联网数据存储和分析中的应用案例</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+
+                <!-- UI/UX设计文章 -->
+                <article class="blog-post fade-up">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/800/600?random=31" alt="UI设计">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024-02-15</span>
+                            <span class="post-category">ui-ux</span>
+                        </div>
+                        <h2 class="post-title">数据可视化设计原则</h2>
+                        <p class="post-excerpt">如何设计直观有效的数据可视化界面，提升用户理解效率</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+
+                <!-- 前端开发文章 -->
+                <article class="blog-post fade-up">
+                    <div class="post-image">
+                        <img src="https://picsum.photos/800/600?random=32" alt="前端开发">
+                    </div>
+                    <div class="post-content">
+                        <div class="post-meta">
+                            <span class="post-date">2024-02-14</span>
+                            <span class="post-category">frontend</span>
+                        </div>
+                        <h2 class="post-title">WebAssembly实战指南</h2>
+                        <p class="post-excerpt">使用WebAssembly优化Web应用性能的实践经验分享</p>
+                        <a href="#" class="read-more">阅读更多</a>
+                    </div>
+                </article>
+                                <!-- 移动开发文章 -->
+                                <article class="blog-post fade-up">
+                                    <div class="post-image">
+                                        <img src="https://picsum.photos/800/600?random=33" alt="移动开发">
+                                    </div>
+                                    <div class="post-content">
+                                        <div class="post-meta">
+                                            <span class="post-date">2024-02-13</span>
+                                            <span class="post-category">mobile</span>
+                                        </div>
+                                        <h2 class="post-title">SwiftUI动画实</h2>
+                                        <p class="post-excerpt">创建流畅自然的iOS应用动画效果，提升用户体验</p>
+                                        <a href="#" class="read-more">阅读更多</a>
+                                    </div>
+                                </article>
+                
+                                <!-- 所有剩余文章... -->
+                                
+                            </div><!-- 结束 blog-grid -->
+                
+                            <!-- 侧边栏 -->
+                            <aside class="blog-sidebar">
+                                <!-- 搜索框 -->
+                                <div class="sidebar-widget search-widget">
+                                    <input type="text" placeholder="搜索文章..." class="search-input">
+                                    <button class="search-button" title="搜索">
+                                        <i class="fas fa-search"></i>
+                                    </button>
+                                </div>
+                
+                                <!-- 分类列表 -->
+                                <div class="sidebar-widget categories-widget">
+                                    <h3 class="widget-title">文章分类</h3>
+                                    <ul class="categories-list">
+                                        <li data-category="frontend">
+                                            <span class="category-name">前端开发</span>
+                                            <span class="post-count">12</span>
+                                        </li>
+                                        <li data-category="backend">
+                                            <span class="category-name">后端开发</span>
+                                            <span class="post-count">15</span>
+                                        </li>
+                                        <li data-category="mobile">
+                                            <span class="category-name">移动开发</span>
+                                            <span class="post-count">8</span>
+                                        </li>
+                                        <li data-category="devops">
+                                            <span class="category-name">DevOps</span>
+                                            <span class="post-count">10</span>
+                                        </li>
+                                        <li data-category="ai">
+                                            <span class="category-name">人工智能</span>
+                                            <span class="post-count">7</span>
+                                        </li>
+                                        <li data-category="database">
+                                            <span class="category-name">数据库</span>
+                                            <span class="post-count">9</span>
+                                        </li>
+                                        <li data-category="cloud">
+                                            <span class="category-name">云计算</span>
+                                            <span class="post-count">11</span>
+                                        </li>
+                                        <li data-category="ui-ux">
+                                            <span class="category-name">UI/UX设计</span>
+                                            <span class="post-count">6</span>
+                                        </li>
+                                    </ul>
+                                </div>
+                
+                                <!-- 标签云 -->
+                                <div class="sidebar-widget tags-widget">
+                                    <h3 class="widget-title">热门标签</h3>
+                                    <div class="tags-cloud">
+                                        <a href="#" class="tag">JavaScript</a>
+                                        <a href="#" class="tag">Python</a>
+                                        <a href="#" class="tag">Docker</a>
+                                        <a href="#" class="tag">React</a>
+                                        <a href="#" class="tag">Vue</a>
+                                        <a href="#" class="tag">Node.js</a>
+                                        <a href="#" class="tag">AWS</a>
+                                        <a href="#" class="tag">Kubernetes</a>
+                                        <a href="#" class="tag">机器学习</a>
+                                        <a href="#" class="tag">微服务</a>
+                                    </div>
+                                </div>
+                
+                                <!-- 热门文章 -->
+                                <div class="sidebar-widget popular-posts-widget">
+                                    <h3 class="widget-title">热门文章</h3>
+                                    <div class="popular-posts">
+                                        <article class="popular-post">
+                                            <img src="https://picsum.photos/100/100?random=1" alt="热门文章1">
+                                            <div class="popular-post-content">
+                                                <h4>现代前端工程化实践</h4>
+                                                <span class="post-date">2024-03-20</span>
+                                            </div>
+                                        </article>
+                                        <article class="popular-post">
+                                            <img src="https://picsum.photos/100/100?random=2" alt="热门文章2">
+                                            <div class="popular-post-content">
+                                                <h4>微服务架构设计指南</h4>
+                                                <span class="post-date">2024-03-15</span>
+                                            </div>
+                                        </article>
+                                        <article class="popular-post">
+                                            <img src="https://picsum.photos/100/100?random=3" alt="热门文章3">
+                                            <div class="popular-post-content">
+                                                <h4>AI辅助开发新趋势</h4>
+                                                <span class="post-date">2024-03-10</span>
+                                            </div>
+                                        </article>
+                                    </div>
+                                </div>
+                
+                                <!-- 订阅表单 -->
+                                <div class="sidebar-widget subscribe-widget">
+                                    <h3 class="widget-title">订阅更新</h3>
+                                    <form class="subscribe-form">
+                                        <input type="email" placeholder="输入您的邮箱" required>
+                                        <button type="submit">订阅</button>
+                                    </form>
+                                </div>
+                            </aside>
+                        </div><!-- 结束 blog-content -->
+                    </main>
+                
+                    <footer class="footer">
+                        <div class="footer-content">
+                            <div class="footer-section">
+                                <h3>关于我们</h3>
+                                <p>分享技术，连接未来</p>
+                            </div>
+                            <div class="footer-section">
+                                <h3>快速链接</h3>
+                                <ul>
+                                    <li><a href="./index.html">首页</a></li>
+                                    <li><a href="./blog.html">博客</a></li>
+                                    <li><a href="./about.html">关于</a></li>
+                                    <li><a href="./contact.html">联系</a></li>
+                                </ul>
+                            </div>
+                            <div class="footer-section">
+                                <h3>联系方式</h3>
+                                <p>邮箱：contact@example.com</p>
+                                <div class="social-links">
+                                    <a href="#" title="访问GitHub"><i class="fab fa-github"></i></a>
+                                    <a href="#" title="访问Twitter"><i class="fab fa-twitter"></i></a>
+                                    <a href="#" title="访问LinkedIn"><i class="fab fa-linkedin"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="footer-bottom">
+                            <p>&copy; 2024 技术博客. All rights reserved.</p>
+                        </div>
+                    </footer>
+                
+                    <script src="./js/main.js"></script>
+                    <script src="./js/blog.js"></script>
+                </body>
+                </html>

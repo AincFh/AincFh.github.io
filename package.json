@@ -1,0 +1,13 @@
+{
+  "name": "blog-client",
+  "version": "1.0.0",
+  "private": true,
+  "scripts": {
+    "dev": "serve",
+    "build": "echo 'No build required'",
+    "start": "serve"
+  },
+  "dependencies": {
+    "serve": "^14.0.0"
+  }
+}

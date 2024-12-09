@@ -1,0 +1,97 @@
+{
+    "site": {
+        "title": "パーソナルブログ"
+    },
+    "nav": {
+        "home": "ホーム",
+        "blog": "ブログ",
+        "gallery": "ギャラリー",
+        "about": "概要",
+        "contact": "お問い合わせ"
+    },
+    "hero": {
+        "title": "ブログへようこそ",
+        "subtitle": "デザインとテクノロジーの物語を共有"
+    },
+    "blog": {
+        "title": "最新の投稿",
+        "subtitle": "最新の考えと経験を共有",
+        "header": {
+            "title": "ブログ記事",
+            "subtitle": "技術的な洞察と考察を共有"
+        },
+        "readMore": "続きを読む"
+    },
+    "gallery": {
+        "title": "ポートフォリオ",
+        "subtitle": "選択されたプロジェクト事例",
+        "header": {
+            "title": "作品ギャラリー",
+            "subtitle": "クリエイティブな世界を探索"
+        },
+        "filters": {
+            "all": "すべて",
+            "web": "ウェブデザイン",
+            "app": "アプリインターフェース",
+            "brand": "ブランドデザイン",
+            "ui": "UIコンポーネント"
+        }
+    },
+    "contact": {
+        "title": "お問い合わせ",
+        "header": {
+            "title": "お問い合わせ",
+            "description": "ご質問やご提案がございましたら、お気軽にお問い合わせください"
+        },
+        "form": {
+            "name": "お名前",
+            "email": "メールアドレス",
+            "subject": "件名",
+            "message": "メッセージ",
+            "submit": "送信"
+        },
+        "info": {
+            "title": "連絡先情報",
+            "description": "以下の方法でお問い合わせください。できるだけ早くご回答いたします。",
+            "email": {
+                "title": "メール",
+                "value": "contact@example.com"
+            },
+            "phone": {
+                "title": "電話番号",
+                "value": "(123) 456-7890"
+            },
+            "address": {
+                "title": "住所",
+                "value": "〒xxx-xxxx 東京都xxx区xxx"
+            },
+            "hours": {
+                "title": "営業時間",
+                "value": "月曜日～金曜日：9:00 - 18:00"
+            },
+            "wechat": {
+                "title": "WeChat",
+                "value": "WeChat_ID"
+            }
+        }
+    },
+    "footer": {
+        "about": {
+            "title": "会社概要",
+            "desc": "私たちは、クライアントに最高品質のデザインと技術ソリューションを提供することに情熱を注ぐクリエイティブチームです。"
+        },
+        "quickLinks": {
+            "title": "クイックリンク"
+        },
+        "contact": {
+            "title": "連絡先",
+            "email": "contact@example.com",
+            "phone": "(123) 456-7890",
+            "address": "〒xxx-xxxx 東京都xxx区xxx"
+        },
+        "followUs": {
+            "title": "フォローする"
+        },
+        "copyright": "© 2024 パーソナルブログ. All rights reserved."
+    }
+}
