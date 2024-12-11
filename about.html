@@ -22,21 +22,69 @@
                 <li><a href="./about.html" class="nav-link active"><i class="fas fa-user"></i> <span data-i18n="nav.about">关于</span></a></li>
                 <li><a href="./contact.html" class="nav-link"><i class="fas fa-envelope"></i> <span data-i18n="nav.contact">联系</span></a></li>
                 <li class="language-switcher">
-                    <button class="lang-btn" title="切换语言">
+                    <div class="lang-btn">
                         <i class="fas fa-globe"></i>
                         <span class="current-lang">简体中文</span>
-                    </button>
-                    <ul class="language-dropdown">
-                        <li data-lang="zh-CN" class="active"><span>简体中文</span></li>
-                        <li data-lang="zh-TW"><span>繁體中文</span></li>
-                        <li data-lang="en"><span>English</span></li>
-                        <li data-lang="ja"><span>日本語</span></li>
-                        <li data-lang="ko"><span>한国어</span></li>
-                    </ul>
+                    </div>
+                    <div class="language-dropdown">
+                        <div class="lang-option active" data-lang="zh-CN">
+                            <div class="lang-name">
+                                <span class="primary">简体中文</span>
+                                <span class="secondary">中国大陆</span>
+                            </div>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="zh-TW">
+                            <div class="lang-name">
+                                <span class="primary">繁體中文</span>
+                                <span class="secondary">中國台灣</span>
+                            </div>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="en">
+                            <div class="lang-name">
+                                <span class="primary">English</span>
+                                <span class="secondary">United States</span>
+                            </div>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="ja">
+                            <div class="lang-name">
+                                <span class="primary">日本語</span>
+                                <span class="secondary">日本</span>
+                            </div>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                        <div class="lang-option" data-lang="ko">
+                            <div class="lang-name">
+                                <span class="primary">한국어</span>
+                                <span class="secondary">대한민국</span>
+                            </div>
+                            <span class="lang-check"><i class="fas fa-check"></i></span>
+                        </div>
+                    </div>
                 </li>
-                <li class="auth-buttons">
-                    <a href="./login.html" class="btn btn-login"><i class="fas fa-sign-in-alt"></i> <span data-i18n="nav.login">登录</span></a>
-                    <a href="./register.html" class="btn btn-register"><i class="fas fa-user-plus"></i> <span data-i18n="nav.register">注册</span></a>
+                <li class="user-menu">
+                    <div class="user-avatar">
+                        <i class="fas fa-user-astronaut"></i>
+                    </div>
+                    <div class="user-dropdown">
+                        <div class="user-dropdown-content">
+                            <div class="guest-welcome">
+                                <div class="welcome-icon">
+                                    <i class="fas fa-robot"></i>
+                                </div>
+                                <div class="welcome-text">
+                                    <h4>探索更多功能</h4>
+                                    <p>登录后即可体验完整功能</p>
+                                </div>
+                            </div>
+                            <div class="dropdown-buttons">
+                                <a href="./login.html" class="btn btn-primary">登录</a>
+                                <a href="./register.html" class="btn btn-outline">注册</a>
+                            </div>
+                        </div>
+                    </div>
                 </li>
             </ul>
             <button class="mobile-menu-btn" title="切换导航菜单">

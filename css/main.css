@@ -1130,14 +1130,10 @@ ul {
 
 /* 移动端适配 */
 @media (max-width: 768px) {
-    .nav-content {
-        justify-content: space-between; /* 移动端时改为两端对齐 */
-    }
-
     .nav-links {
         position: fixed;
         top: 60px;
-        right: 0; /* 从右侧滑入 */
+        right: 0;
         width: 100%;
         background: white;
         flex-direction: column;
@@ -1146,6 +1142,7 @@ ul {
         transform: translateX(100%);
         opacity: 0;
         visibility: hidden;
+        transition: transform 0.3s ease, opacity 0.3s ease;
     }
 
     .nav-links.active {
